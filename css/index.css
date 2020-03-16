@@ -485,5 +485,9 @@ form div{
     address {
         width: 50%;
     }
+    /* SERVICE PAGE */
+    .area {
+        width: 48%
+    }
 
 }
