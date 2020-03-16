@@ -443,7 +443,20 @@ form div{
 
     /* SERVICE PAGE */
     .area {
-        width: 80%
+        width: 90%
+    }
+
+    .facts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .facts div {
+        width: 100%;
+    }
+
+    .services-info-img {
+        width: 90%
     }
 
 }
