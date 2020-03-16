@@ -1,3 +1,493 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* GENERAL */
+* {
+	max-width: 100%;
+	text-align: center;
+	/* border: 1px solid gray !important; */
+}
+
+body {
+	margin: 1%;
+	font-family: 'Carter One', cursive;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+/* NAVIGATION */
+nav {
+	padding: 1%;
+	background-color: darkblue;
+	border: 1px solid yellow;
+	outline: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px yellow;
+	text-shadow: 2px 2px 2px black;
+}
 
 
+a:hover {
+	color: yellow;
+	text-shadow: 1px 1px black;
+	text-shadow: 2px 2px 2px black;
+	transition: 2s;
+}
+
+
+.logoImage {
+	filter: invert(100%);
+}
+
+/* HEADER*/
+/* INDEX */
+header {
+	display: flex;
+	justify-content: space-around;
+	margin: 1%;
+}
+
+header .header1, .header2{
+	display: flex;
+	justify-content: center;
+}
+
+
+.align-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 500%;
+}
+
+button {
+	width: 80%;
+	background-color: lightblue;
+	border: 1px solid black;
+	box-shadow: 2px 2px darkblue;
+	font-size: 20px;
+	text-shadow: 1px 1px yellow;
+	text-shadow: 1px 1px 1px yellow;
+	font-family: 'Carter One', cursive;
+	transition: 1s;
+}
+
+button:hover {
+	background-color: dodgerblue;
+	color: white;
+	text-shadow: 2px 2px black;
+	text-shadow: 2px 2px 2px black;
+	transition: 1s;
+
+}
+
+header img {
+	border-radius: 100%;
+	border: 3px solid darkblue;
+}
+
+hr {
+	border: 1px solid black;
+	margin: 2%;
+}
+/* SERVICES HEADER */
+.services-header-img {
+	border: 2px solid yellow;
+	outline: 2px solid black;
+	margin: 2% 0;
+	width: 100%;
+}
+
+/* CONTENT */
+/* INDEX */
+.topContent {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.topContent div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 40%;
+	text-align: center;
+}
+
+
+h2 {
+	font-size: 20px;
+	text-decoration: underline;
+	width: auto;
+
+}
+
+h2, p {
+	background-color: lightblue;
+	border: 1px solid black;
+	padding: 1%;
+}
+
+img.middle-img {
+	width: 100%;
+	margin: 1% 0; 
+	border: 2px solid yellow;
+	outline: 2px solid black;
+}
+
+.bottomContent {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.bottomContent div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 30%;
+}
+
+.bottomContent h2 {
+	width: 50%;
+}
+
+
+/* SERVICES HEADER */
+.servicesTop {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+
+.servicesTop h2 {
+	width: 20%;
+}
+
+.servicesTop p {
+	text-align: left;
+}
+
+/* SERVICES CONTENT */
+
+.serviceAreas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.area {
+	background-color: lightgray;
+	border-radius: 25px;
+	border: 1px solid black;
+	width: 40%;
+	padding: 1%;
+	margin: 1%;
+}
+
+.area h2 {
+	border: none;
+	background-color: lightgray;
+	border-radius: 25px;
+}
+
+.area p {
+	border: none;
+	background-color: lightgray;
+	border-radius: 25px;
+}
+
+.serviceAreas button {
+	width: 30%;
+}
+
+/* FACTS CONTENT */
+.facts {
+	display: flex;
+	justify-content: space-around;
+}
+
+.facts div {
+	width: 40%;
+}
+
+.facts div:first-child {
+	background-color: lightblue;
+	border: 1px solid black;
+}
+
+.facts div:first-child h2 {
+	border: none;
+}
+
+.facts div:first-child p {
+	border: none;
+	text-align: left;
+}
+
+.facts img {
+	border: 2px solid yellow;
+	outline: 2px solid black;
+}
+
+ul {
+	list-style-type: square !important;
+	padding: 1%;
+}
+
+li {
+	text-align: left;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+/* FOOTER */
+address {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 25%;
+}
+
+address h2 {
+	width: auto;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 1% 0;
+}
+
+footer p {
+	width: 100%;
+}
+
+.contactContainer {
+	background-color: lightblue;
+	border: 1px solid black;
+	padding: 1%;
+}
+
+b {
+	font-weight: bold;
+}
+
+/* CONTACT FORM */
+
+form div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.submit {
+	background-color: lightblue;
+	border: 1px solid black;
+	box-shadow: 2px 2px darkblue;
+	font-size: 20px;
+	text-shadow: 1px 1px yellow;
+	text-shadow: 1px 1px 1px yellow;
+	font-family: 'Carter One', cursive;
+	transition: 1s;
+}
+
+.submit:hover {
+	background-color: dodgerblue;
+	color: white;
+	text-shadow: 2px 2px black;
+	text-shadow: 2px 2px 2px black;
+	transition: 1s;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+    
+    nav {
+        border: none;
+        width: 100%;
+        background-color: dodgerblue;
+    }
+
+    .links {
+        flex-direction: column-reverse;
+    }
+
+    .links a {
+        padding: 1%;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    .topContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .topContent div {
+        width: 90%;
+        padding: 1%;
+    }
+
+    img.middle-img {
+        width: 90%;
+    }
+
+    .bottomContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottomContent div {
+        width: 90%;
+        padding: 1%;
+    }
+
+    address {
+        width: 50%;
+    }
+
+    /* SERVICE PAGE */
+    .area {
+        width: 90%
+    }
+
+    .facts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .facts div {
+        width: 100%;
+    }
+
+    .services-info-img {
+        width: 90%
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+    nav {
+        border: none;
+        width: 100%;
+        background-color: dodgerblue;
+    }
+
+
+    .links a {
+        padding: 1%;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    img.middle-img {
+        width: 90%;
+    }
+
+    address {
+        width: 50%;
+    }
+    /* SERVICE PAGE */
+    .area {
+        width: 48%
+    }
+
+}
