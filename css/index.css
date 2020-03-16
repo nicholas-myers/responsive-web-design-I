@@ -442,3 +442,30 @@ form div{
     }
 
 }
+
+@media (max-width: 800px) {
+    
+    nav {
+        border: none;
+        width: 100%;
+        background-color: dodgerblue;
+    }
+
+
+    .links a {
+        padding: 1%;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    img.middle-img {
+        width: 90%;
+    }
+
+    address {
+        width: 50%;
+    }
+
+}
