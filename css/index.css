@@ -441,6 +441,11 @@ form div{
         width: 50%;
     }
 
+    /* SERVICE PAGE */
+    .area {
+        width: 80%
+    }
+
 }
 
 @media (max-width: 800px) {
