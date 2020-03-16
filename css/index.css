@@ -413,9 +413,32 @@ form div{
     .topContent {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .topContent div {
         width: 90%;
+        padding: 1%;
+    }
+
+    img.middle-img {
+        width: 90%;
+    }
+
+    .bottomContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottomContent div {
+        width: 90%;
+        padding: 1%;
+    }
+
+    address {
+        width: 50%;
     }
 
 }
